@@ -18,3 +18,15 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - pnpm dev starts your Next.js development server on port 3000. Let's check to see if it's working.
 - Open http://localhost:3000 on your browser.
+
+### 학습 내용
+
+#### Tailwind
+
+- 테일윈드는 TSX 마크업에서 유틸리티 클래스를 빠르게 작성할 수 있도록 하여
+  개발 프로세스를 가속화하는 CSS 프레임워크입니다.
+
+### 학습 진행 현황
+
+- You've Completed Chapter 1
+- https://nextjs.org/learn/dashboard-app/css-styling
