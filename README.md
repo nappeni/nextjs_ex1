@@ -14,12 +14,11 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 ### 개발 서버 실행
 
-#### npm install -g pnpm
-#### pnpm i
-#### pnpm dev
-
-- pnpm dev starts your Next.js development server on port 3000.
-- Open http://localhost:3000 on your browser.
+- npm install -g pnpm
+- pnpm i
+- pnpm dev
+    - pnpm dev starts your Next.js development server on port 3000.
+    - Open http://localhost:3000 on your browser.
 
 ### 학습 내용
 
