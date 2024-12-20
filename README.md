@@ -56,12 +56,11 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - Tailwind antialiased class
     - 글꼴을 부드럽게 만듭니다.
 
-    ```/app/ui/fonts.ts
+    ```ts:/app/ui/fonts.ts
     import { Inter } from 'next/font/google';
     export const inter = Inter({ subsets: ['latin'] });
     ```
-
-    ```/app/layout.tsx
+    ```tsx:/app/layout.tsx
     import { inter } from '@/app/ui/fonts';
     <body className={`${inter.className} antialiased`}>{children}</body>
     ```
@@ -70,8 +69,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - 애플리케이션의 특정 요소에 글꼴을 추가할 수도 있습니다.
 - 'next/font/google'를 ctrl+click하면 사용가능한 폰트 종류를 확인할 수 있다.
 
-    ```/app/ui/fonts.ts
-    import { Inter, Noto Sans } from 'next/font/google';
+    ```ts:/app/ui/fonts.ts
+    import { Inter, Noto_Sans_KR } from 'next/font/google';
         export const f_light = Noto_Sans_KR({
         weight: ['400'],
         subsets: ['latin'],
@@ -86,6 +85,10 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
         weight: ['700'],
         subsets: ['latin'],
     });
+    ```
+    ```tsx:/app/layout.tsx
+    import { inter, f_light, f_normal, f_bold } from '@/app/ui/fonts';
+    <body className={`${f_light.className} antialiased`}>{children}</body>
     ```
 
 ### 학습 진행 현황
