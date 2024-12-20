@@ -48,6 +48,24 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 #### 3장
 
+##### 글꼴 최적화
+
+- Next.js는 next/font 모듈을 사용할 때 애플리케이션에서 글꼴을 자동으로 최적화합니다.
+- 빌드 시 글꼴 파일을 다운로드하고 다른 정적 자산과 함께 호스팅합니다.
+- 즉, 사용자가 애플리케이션을 방문하면 성능에 영향을 미치는 글꼴에 대한 추가 네트워크 요청이 없습니다.
+- Tailwind antialiased class
+    - 글꼴을 부드럽게 만듭니다.
+
+.../app/ui/fonts.ts
+import { Inter } from 'next/font/google';
+export const inter = Inter({ subsets: ['latin'] });
+...
+
+.../app/layout.tsx
+import { inter } from '@/app/ui/fonts';
+<body className={`${inter.className} antialiased`}>{children}</body>
+...
+
 ### 학습 진행 현황
 
 - You've Completed Chapter 2
