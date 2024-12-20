@@ -56,15 +56,15 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - Tailwind antialiased class
     - 글꼴을 부드럽게 만듭니다.
 
-.../app/ui/fonts.ts
+```/app/ui/fonts.ts
 import { Inter } from 'next/font/google';
 export const inter = Inter({ subsets: ['latin'] });
-...
+```
 
-.../app/layout.tsx
+```/app/layout.tsx
 import { inter } from '@/app/ui/fonts';
 <body className={`${inter.className} antialiased`}>{children}</body>
-...
+```
 
 ### 학습 진행 현황
 
