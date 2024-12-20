@@ -91,6 +91,38 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
     <body className={`${f_light.className} antialiased`}>{children}</body>
     ```
 
+##### 이미지 최적화
+- Next.js는 이미지와 같은 정적 자산을 최상위 /public 폴더에서 서비스할 수 있습니다.
+- /public 내부의 파일은 애플리케이션에서 참조할 수 있습니다.
+- 이미지 최적화는 웹 개발에서 큰 주제로, 그 자체로 전문 분야로 간주될 수 있습니다.
+- 이러한 최적화를 수동으로 구현하는 대신 next/image구성 요소를 사용하여 이미지를 자동으로 최적화할 수 있습니다.
+- <Image> 컴포넌트는 HTML <img> 태그의 확장판이며, 다음과 같은 자동 이미지 최적화 기능을 제공합니다
+    - 이미지가 로드될 때 레이아웃 이동을 자동으로 방지합니다.
+    - 큰 이미지를 더 작은 뷰포트를 가진 장치로 전송하지 않도록 이미지 크기를 조정합니다.
+    - 기본적으로 이미지를 느리게 로드합니다. (이미지가 뷰포트에 들어갈 때 로드됩니다.)
+    - 브라우저가 지원할 때 WebP 및 AVIF와 같은 최신 형식으로 이미지를 제공합니다.
+- 레이아웃 이동을 방지하기 위해 이미지의 너비와 높이를 설정하는 것이 좋습니다. 이는 원본 이미지와 동일한 가로 세로 비율이어야 합니다.
+- 모바일 화면의 DOM에서 이미지를 제거하기 위해 숨겨진 클래스와 데스크톱 화면에 이미지를 표시하기 위해 md:block을 볼 수도 있습니다.
+
+    ```tsx:/app/page.tsx
+    import Image from 'next/image';
+    <Image
+        src="/hero-desktop.png"
+        width={1000}
+        height={760}
+        className="hidden md:block"
+        alt="Screenshots of the dashboard project showing desktop version"
+    />
+    <Image
+        src="/hero-mobile.png"
+        width={560}
+        height={620}
+        className="block md:hidden"
+        alt="Screenshot of the dashboard project showing mobile version"
+    />
+    ```
+
+
 ### 학습 진행 현황
 
 - You've Completed Chapter 2
