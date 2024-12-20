@@ -14,6 +14,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 ### 개발 서버 실행
 
+#### npm install -g pnpm
+#### pnpm i
 #### pnpm dev
 
 - pnpm dev starts your Next.js development server on port 3000.
@@ -30,6 +32,16 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 - CSS 모듈을 사용하면 고유한 클래스 이름을 자동으로 생성합니다.
 - CSS를 구성 요소로 범위를 지정할 수 있으므로 스타일 충돌에 대한 걱정도 할 필요가 없습니다.
+
+#### 라이브러리를 사용하여 clsx클래스 이름 전환
+
+- 상태나 다른 조건에 따라 요소의 스타일을 조건부로 지정해야 하는 경우가 있을 수 있습니다.
+- clsx는 클래스 이름을 쉽게 전환할 수 있는 라이브러리입니다. 
+
+#### 기타 스타일링 솔루션
+
+- .css 및 .scss 파일을 가져올 수 있습니다.
+- CSS-in-JS 라이브러리에는 style-jx, style-components, 그리고 감정이 포함됩니다.
 
 ### 학습 진행 현황
 
