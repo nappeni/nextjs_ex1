@@ -122,6 +122,8 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
     />
     ```
 
+###### 차원이 없는 이미지와 웹 폰트는 브라우저가 추가 리소스를 다운로드해야 하기 때문에 레이아웃 변경의 일반적인 원인입니다.
+
 
 ### 학습 진행 현황
 
