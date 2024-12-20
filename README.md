@@ -22,14 +22,14 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 ### 학습 내용
 
-#### 1장
+#### <1장>
 
 ##### Tailwind
 
 - 테일윈드는 TSX 마크업에서 유틸리티 클래스를 빠르게 작성할 수 있도록 하여 개발 프로세스를 가속화하는 CSS 프레임워크입니다.
 - 테일윈드에서는 클래스 이름을 추가하여 요소를 스타일링합니다.
 
-#### 2장
+#### <2장>
 
 ##### CSS Modules
 
@@ -46,7 +46,7 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - .css 및 .scss 파일을 가져올 수 있습니다.
 - CSS-in-JS 라이브러리에는 style-jx, style-components, 그리고 감정이 포함됩니다.
 
-#### 3장
+#### <3장>
 
 ##### 글꼴 최적화
 
@@ -122,11 +122,23 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
     />
     ```
 
-###### 차원이 없는 이미지와 웹 폰트는 브라우저가 추가 리소스를 다운로드해야 하기 때문에 레이아웃 변경의 일반적인 원인입니다.
+##### 차원이 없는 이미지와 웹 폰트는 브라우저가 추가 리소스를 다운로드해야 하기 때문에 레이아웃 변경의 일반적인 원인입니다.
+
+##### 추천 독서
+- 이미지 최적화 문서
+    - https://nextjs.org/docs/app/building-your-application/optimizing/images
+- 글꼴 최적화 문서
+    - https://nextjs.org/docs/app/building-your-application/optimizing/fonts
+- 이미지로 웹 성능 개선(MDN)
+    - https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Multimedia
+- 웹 폰트(MDN)
+    - https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts
+- Core Web Vitals가 SEO에 미치는 영향
+    - https://vercel.com/blog/how-core-web-vitals-affect-seo
 
 
 ### 학습 진행 현황
 
-- You've Completed Chapter 2
-- Chapter 3 진행중
-- https://nextjs.org/learn/dashboard-app/optimizing-fonts-images
+- You've Completed Chapter 3
+- Chapter 4 진행중
+- https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages
