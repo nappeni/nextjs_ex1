@@ -136,6 +136,14 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 - Core Web Vitals가 SEO에 미치는 영향
     - https://vercel.com/blog/how-core-web-vitals-affect-seo
 
+#### <4장>
+
+##### 중첩 라우팅
+- Next.js는 폴더가 중첩 경로를 만드는 데 사용되는 파일 시스템 라우팅을 사용합니다.
+- 각 폴더는 URL 세그먼트 에 매핑되는 경로 세그먼트를 나타냅니다.
+- layout.tsx 파일과 page.tsx 파일을 사용하여 각 경로에 대해 별도의 UI를 만들 수 있습니다.
+- page.tsx는 React 구성 요소를 내보내는 특별한 Next.js 파일이며, 경로가 접근 가능하려면 이 파일이 필요합니다.
+- 레이아웃 파일은 애플리케이션의 모든 페이지가 사용할 수 있는 공유 레이아웃을 만드는 가장 좋은 방법입니다.
 
 ### 학습 진행 현황
 
