@@ -147,6 +147,6 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 
 ### 학습 진행 현황
 
-- You've Completed Chapter 3
-- Chapter 4 진행중
-- https://nextjs.org/learn/dashboard-app/creating-layouts-and-pages
+- You've Completed Chapter 4
+- Chapter 5 진행중
+- https://nextjs.org/learn/dashboard-app/navigating-between-pages
